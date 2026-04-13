@@ -1,0 +1,62 @@
+/* src/components/Navbar/Navbar.css */
+
+.nj-nav {
+  background: var(--nav-bg) !important;
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0 2px 20px rgba(232, 93, 4, 0.25);
+}
+
+.nj-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f4a261;
+  line-height: 1.1;
+}
+
+.nj-tagline {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: #e9c46a;
+}
+
+/* Theme toggle button */
+.nj-theme-btn {
+  background: rgba(233, 196, 106, 0.1);
+  border: 1px solid rgba(233, 196, 106, 0.3);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background 0.2s;
+}
+.nj-theme-btn:hover {
+  background: rgba(233, 196, 106, 0.25);
+}
+
+/* Navigation Links */
+.nj-nav-link {
+  color: var(--text) !important;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: none;
+  background: transparent;
+}
+
+.nj-nav-link:hover {
+  background-color: rgba(244, 162, 97, 0.1);
+  color: var(--accent) !important;
+}
+
+@media (max-width: 768px) {
+  .nj-nav-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.7rem;
+  }
+}

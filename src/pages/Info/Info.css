@@ -1,0 +1,58 @@
+/* src/pages/Info/Info.css */
+
+.nj-info-page {
+  display: flex;
+  height: calc(100vh - 80px);
+  background: var(--bg);
+}
+
+.nj-info-main {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar styling */
+.nj-info-page::-webkit-scrollbar,
+.nj-info-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.nj-info-page::-webkit-scrollbar-track,
+.nj-info-main::-webkit-scrollbar-track {
+  background: var(--card);
+}
+
+.nj-info-page::-webkit-scrollbar-thumb,
+.nj-info-main::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+.nj-info-page::-webkit-scrollbar-thumb:hover,
+.nj-info-main::-webkit-scrollbar-thumb:hover {
+  background: #e76f51;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nj-info-page {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nj-info-main {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .nj-info-page {
+    height: auto;
+  }
+
+  .nj-info-main {
+    min-height: calc(100vh - 140px);
+  }
+}

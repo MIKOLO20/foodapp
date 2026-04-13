@@ -1,0 +1,78 @@
+/* ─────────────────────────────────────────────────────────
+   src/styles/globals.css  (or index.css — same thing)
+
+   This file sets CSS variables for dark and light mode.
+   The ThemeContext sets data-theme="dark" or data-theme="light"
+   on the <html> tag. CSS then picks the right colours below.
+   ───────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+/* ── DARK MODE ─────────────────────────────────────────── */
+[data-theme='dark'] {
+  --bg:             #0d0500;
+  --card:           #1c0d00;
+  --card-hover:     #2a1200;
+  --border:         #3d1f00;
+  --text:           #f4f4f4;
+  --text-muted:     #c9a87c;
+  --accent:         #e85d04;
+  --accent-light:   #f4a261;
+  --gold:           #e9c46a;
+  --hero-bg:        linear-gradient(135deg, #1a0a00 0%, #3d1200 50%, #1a0a00 100%);
+  --filter-bg:      #120800;
+  --input-bg:       #2a1200;
+}
+
+/* ── LIGHT MODE ────────────────────────────────────────── */
+[data-theme='light'] {
+  --bg:             #fdf6ee;
+  --card:           #ffffff;
+  --card-hover:     #fff4e8;
+  --border:         #f0d9c0;
+  --text:           #1a0a00;
+  --text-muted:     #7a4f2a;
+  --accent:         #e85d04;
+  --accent-light:   #c44a00;
+  --gold:           #a0620a;
+  --hero-bg:        linear-gradient(135deg, #fde8d0 0%, #fbd0a8 50%, #fde8d0 100%);
+  --filter-bg:      #fff4e8;
+  --input-bg:       #fff4e8;
+}
+
+/* ── Reset ─────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body and .nj-app both use var(--bg) so the whole page switches */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nj-app {
+  background: var(--bg);
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+/* ── Bootstrap form overrides ──────────────────────────── */
+.form-control {
+  background: var(--input-bg) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+}
+.form-control:focus {
+  background: var(--input-bg) !important;
+  border-color: var(--accent) !important;
+  color: var(--text) !important;
+  box-shadow: 0 0 0 3px rgba(232, 93, 4, 0.2) !important;
+}
+.form-control::placeholder { color: var(--text-muted) !important; opacity: 0.6; }
+.form-check-input:checked  { background-color: var(--accent) !important; border-color: var(--accent) !important; }

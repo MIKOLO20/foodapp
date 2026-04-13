@@ -1,0 +1,270 @@
+/* src/pages/Contact/Contact.css */
+
+/* Hero Section */
+.nj-contact-hero {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  color: white;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.nj-contact-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.nj-contact-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Contact Main Section */
+.nj-contact-main {
+  background-color: var(--bg);
+}
+
+/* Contact Form */
+.nj-contact-form-wrapper {
+  background-color: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nj-contact-form-wrapper h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.nj-contact-form .form-label {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.nj-contact-form .form-control {
+  background-color: white;
+  border: 1px solid #ddd;
+  color: var(--text);
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nj-contact-form .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(244, 162, 97, 0.25);
+  background-color: white;
+  color: var(--text);
+}
+
+.nj-contact-form .btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nj-contact-form .btn-primary:hover {
+  background-color: var(--accent-dark, #e76f51);
+  border-color: var(--accent-dark, #e76f51);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 162, 97, 0.3);
+}
+
+/* Contact Info */
+.nj-contact-info-wrapper {
+  background-color: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nj-contact-info-wrapper h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.nj-contact-info-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nj-contact-info-item:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.nj-contact-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.nj-contact-info-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.nj-contact-info-item p {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 0;
+}
+
+.nj-contact-info-item a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nj-contact-info-item a:hover {
+  color: var(--accent-light);
+}
+
+/* Social Links */
+.nj-contact-social-wrapper {
+  background-color: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.nj-contact-social-wrapper h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.nj-contact-social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nj-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  color: var(--accent);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.nj-social-link:hover {
+  background-color: var(--accent);
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(244, 162, 97, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .nj-social-link {
+    background-color: var(--card);
+  }
+}
+
+/* FAQ Section */
+.nj-contact-faq {
+  background-color: var(--card);
+}
+
+.nj-contact-faq h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.nj-faq-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.nj-faq-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.nj-faq-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.nj-faq-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nj-faq-card {
+    background-color: var(--card);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nj-contact-title {
+    font-size: 2rem;
+  }
+
+  .nj-contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .nj-contact-form-wrapper,
+  .nj-contact-info-wrapper,
+  .nj-contact-social-wrapper {
+    padding: 1.5rem;
+  }
+
+  .nj-contact-form-wrapper h2,
+  .nj-contact-info-wrapper h2 {
+    font-size: 1.3rem;
+  }
+
+  .nj-contact-social {
+    gap: 0.5rem;
+  }
+
+  .nj-social-link {
+    width: 45px;
+    height: 45px;
+  }
+
+  .nj-social-link svg {
+    width: 20px;
+    height: 20px;
+  }
+}

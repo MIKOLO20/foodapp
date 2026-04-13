@@ -1,0 +1,24 @@
+/* src/pages/Menu/Menu.css */
+
+.nj-hero           { background: var(--hero-bg); border-bottom: 1px solid var(--border); transition: background 0.3s; position: relative; }
+.nj-hero::before    { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); z-index: 1; }
+.nj-hero > * {z-index: 2; position: relative; }
+.nj-hero-title     { font-family: 'Playfair Display', serif; color: white; font-weight: 800; font-size: clamp(1.8rem, 5vw, 2.8rem); text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); }
+.nj-hero-sub       { color: rgba(255, 255, 255, 0.95); font-size: 1rem; max-width: 480px; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); }
+
+.nj-search-group   { max-width: 400px; width: 100%; position: relative; z-index: 2; }
+.nj-search-icon    { background: var(--search-icon-bg) !important; border: 1px solid var(--accent) !important; border-right: none !important; color: var(--text-muted); }
+.nj-search-input   { background: var(--input-bg) !important; border: 1px solid var(--accent) !important; border-left: none !important; border-right: none !important; color: var(--text) !important; }
+.nj-search-input:focus { box-shadow: none !important; }
+.nj-search-clear   { background: var(--input-bg); border: 1px solid var(--accent); border-left: none; color: var(--text-muted); }
+
+.nj-filter-bar     { background: var(--filter-bg); border-bottom: 1px solid var(--border); scrollbar-width: none; transition: background 0.3s; }
+.nj-filter-label   { color: var(--text-muted); font-size: 0.8rem; }
+.nj-cat-btn        { border: 2px solid var(--border) !important; color: var(--text-muted) !important; background: transparent !important; font-weight: 600; font-size: 0.82rem; white-space: nowrap; }
+.nj-cat-btn:hover  { border-color: var(--accent) !important; color: var(--accent) !important; }
+.nj-cat-btn--active{ background: var(--accent) !important; border-color: var(--accent) !important; color: #fff !important; }
+
+.nj-result-count   { color: var(--text-muted); font-size: 0.85rem; }
+.nj-result-count strong { color: var(--accent-light); }
+.nj-muted          { color: var(--text-muted); }
+.nj-clear-filter-btn { border: 2px solid var(--accent) !important; color: var(--accent) !important; background: transparent !important; font-weight: 600; }
