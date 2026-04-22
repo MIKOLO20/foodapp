@@ -1,9 +1,13 @@
 /* src/components/Navbar/Navbar.css */
 
 .nj-nav {
-  background: var(--nav-bg) !important;
+  background: linear-gradient(135deg, #1a1a2e 0%, #141720 100%) !important;
   border-bottom: 2px solid var(--accent);
-  box-shadow: 0 2px 20px rgba(232, 93, 4, 0.25);
+  box-shadow: 0 4px 30px rgba(244, 162, 97, 0.15);
+  top: 0;
+  z-index: 1000;
+  position: sticky;
+  transition: all 0.3s ease-in-out;
 }
 
 .nj-brand {
@@ -31,10 +35,13 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  transition: background 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .nj-theme-btn:hover {
   background: rgba(233, 196, 106, 0.25);
+  transform: scale(1.05);
+  border-color: rgba(233, 196, 106, 0.6);
 }
 
 /* Navigation Links */
@@ -44,14 +51,17 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   background: transparent;
+  cursor: pointer;
+  position: relative;
 }
 
 .nj-nav-link:hover {
-  background-color: rgba(244, 162, 97, 0.1);
+  background-color: rgba(244, 162, 97, 0.15);
   color: var(--accent) !important;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
